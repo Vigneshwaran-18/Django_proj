@@ -14,5 +14,8 @@ def hw(request):
            "type=\"number\" id=\"n\" placeholder=\"Enter 1st Operand\"><br><input type=\"number\" id=\"m\" "
            "placeholder=\"Enter 2nd Operand\"><br/><button "
            "onclick=\"window.location.href='/mtab/'+document.getElementById("
-           "'n').value+'/'+document.getElementById('m').value\">Generate Table</button></body></html>")
+           "'n').value+'/'+document.getElementById('m').value\">Generate Table</button>"
+           "<br><br>"
+           "<input type=\"text\" id=\"st\" placeholder=\"Enter a String\"><br/><button onclick = \"window.location.href='/vc/'+document.getElementById('st').value\">Count Vowels and Consonants</button>"
+           "</body></html>")
     return HttpResponse(htm)
